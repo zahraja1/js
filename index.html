@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> belajar java script</h2>
+
+    <h1 id="tes">hello world</h1>
+    <button onclick="menampilkan_data()">coba pencet</button>
+    <!-- -onlick(fungsi biar si buttonnya kalo di pencet bisa menampilkan apa yng disuruh) -->
+
+    <script>
+        function menampilkan_data(){
+            document.getElementById("tes").innerHTML = ("hallo zahra")
+            // document( object ysng mrwakili dokument HTML di dalam java script)
+            // inner(dapat menampilkan out put ke element yang lebih spesifik)
+            window.alert("ini alert")
+            // window (menampilkan jendela{kek yang tiba"muncul untuk allow} yang hany bisa di gunakan di browser saja)
+        }
+    </script>
+    <!-- script= letaknya paling dekat penutup body -->
+</body>
+</html>

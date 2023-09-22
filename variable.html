@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>variabel</title>
+  </head>
+  <body>
+    <h1>belajar variabel</h1>
+
+    <h2 id="satu"></h2>
+
+    <script>
+      // var sama let itu sama, valuenya bisa berubah.
+      // const valuenya tetap atau tidak bisa diubah ubah.
+      var nama = "zahra";
+      nama = "ara";
+      document.getElementById("satu").innerHTML = nama;
+
+      // contoh kedua //
+      // untuk bisa mengakses variablenya double, tinggal panggil variablenya aja (sebelum manggil variable yng lain harus make +)
+      var nama = "fatimmah";
+      var namaTengah = "az";
+      let namaAkhir = "zahra";
+
+      document.getElementById("satu").innerHTML = nama + namaTengah + namaAkhir;
+    </script>
+    <!-- kalo const->g bisa ganti-ganti value
+    sedangkan kalo var dan let -> bisa diganti-ganti -->
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NaN</title>
+</head>
+<body>
+    <h1>Belajar NaN atau Not a Number</h1>
+    <!-- nan berlaku ketika kita sudah melakukan konversi data -->
+    <h1 id="nan1"></h1>
+    <h1 id="nan2"></h1>
+    <h1 id="nan3"></h1>
+    <h1 id="nan4"></h1>
+
+    <!-- isNaN=> berfungsi untuk melakukan pengecekan terhadap data yang sudah dikonversi bersifat
+    NaN atau bukan. hasilnya berupa data boolean atau true or fals  -->
+    <h1>Belajar isNaN</h1>
+    <h1 id="isnan"></h1>
+    <h1 id="isnan2"></h1>
+    <h1 id="isnan3"></h1>
+
+    <script>
+        // NaN
+        // NaN tidak mentolerin kesalahan, maka jika ada huruf yang masuk mamka out put yang akan ditampilkan. 
+        let a = Number("eaa");
+        // kalo letnya bukan berupa angka maka out putnya tidak keluar maka yang  keluarnya adalah nan.
+        let b = Number("30");
+        let c = Number("20eaaaaaa");
+        let d = Number("a+b+c");
+
+        document.getElementById("nan1").innerHTML=a;
+        document.getElementById("nan2").innerHTML=b;
+        document.getElementById("nan3").innerHTML=c;
+        document.getElementById("nan4").innerHTML=d;
+        
+
+        // isNaN (harus melakukan konversi dulu)
+        
+        let e = ("eaaa");
+        let f = ("30");
+        let g = ("30e");
+        // hasil diatas adalah true, karena 10e tidak bisa di konversi alias NaN
+
+        document.getElementById("isnan").innerHTML=isNaN(e);
+        document.getElementById("isnan2").innerHTML=isNaN(f);
+        document.getElementById("isnan3").innerHTML=isNaN(g);
+        // isi variablenya harus di dalam kurung.
+
+
+    </script>
+</body>
+</html>

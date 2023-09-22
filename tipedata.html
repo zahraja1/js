@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>tipe data</h1>
+    <!-- string=text
+    number=nomor
+boolean= true or false
+array= banyak data -->
+<h2 id="number"> </h2>
+<h2 id="string"> </h2>
+<h2 id="boolean"> </h2>
+<h2 id="array"> </h2>
+<script>
+    // number-> untuk nomer
+    var dataNumber = 20;
+    var number;
+
+    console.log(dataNumber);
+    document.getElementById("number").innerHTML = dataNumber;
+   
+    // escape karakter (\'{bakal nampilin kutip}), (/""{bakal nampilin kutip"}), (\ n{fungsinya kayak ngasi enter}) (\t{tab kek spasi tapi lebih besar spasinya}) (\b{simbol kotak})
+    // toUppercase -> memperbesar
+    //  toLowercase ->memperkecil
+    // replice -> menggantikan
+    // repeat -> ngulang atau ngebanyakin
+    //  slice -> menghilangkan huruf
+
+
+
+     // string ->teks
+    var dataString = "zahraaa";
+    console.log(dataString.repeat(2))
+    document.getElementById("string").innerHTML = dataString.repeat(2)
+
+    // boolean-> true atau false
+    var dataBolean = true;
+    console.log(dataBolean);
+    document.getElementById("boolean").innerHTML = dataBolean
+
+    // array -> bisa banyak nyimpan data apapun tipenya biasanya pake []
+    var dataArray = [1,2,3,5,6,6,6]
+
+    console.log(dataArray);
+    document.getElementById("array").innerHTML = dataArray;
+</script>
+</body>
+</html>

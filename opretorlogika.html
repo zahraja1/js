@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>operator logika</title>
+</head>
+<body>
+    <h1>Operator Logika</h1>
+    <h2 id="logika"></h2>
+    <!-- operator logika ada 3 {&&(and), ||(or), !(not)} -->
+    <script>
+        let nama="zahra"
+        let email="fmhazzahra@gmail.com"
+        let pass="1234"
+        let hasil;
+
+        // if (email =="fmhazzahra@gmail.com" || pass == "1234"){
+        //     hasil ="selamat datang " + nama;
+        // }
+        // && untuk menggabungkan (penyambung){nilainya harus bener semua}
+        // || untuk mencocokkan (pencocokan) {salah satu nialinya harus benar}
+        // ! (negasi/penolakan) {jadi semua yang ditulis bernilai salah}
+        // karena pakenya (==) maka nilainya harus sama
+        // === tipedata sama nilainya harus sama
+        // else{
+        //     hasil="yahh g bisa masuk"
+        // }
+
+        // !=negasi (letaknya selalu di depan variable)
+        if(!(email == "fmhazzahra@gmail.com") ){
+            // maka sama dengannya harus pake negasi juga 
+            hasil= "betul";
+        }else{
+            hasil="salah"
+        }
+        hasil=
+        document.getElementById("logika").innerHTML = hasil;
+    </script>
+    
+</body>
+</html>

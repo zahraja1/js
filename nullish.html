@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Nullish operator</title>
+</head>
+<body>
+    <h1>belajar Nullish</h1>
+    <h1 id="nullish"></h1>
+    <!-- null dan undefined => sama kyk ternary -->
+
+    <script>
+        // NULLISH COLAESING OPERATOR => buat ngasih value ke variable yang tipe datanya null
+        // atau undefined. jadi pas diakses walaupun variablenya nulish, tapi bisa tetep ada valuenya
+
+
+
+        // versi panjang prosesnya
+        // let nama;
+
+        // let data = nama;
+
+        // if(data===undefined|| data===null){
+        //     data = "ini jadi ada nilainya";
+        // }
+        // document.getElementById("nullish").innerHTML= data;
+
+
+
+
+        // versi singkat menggunakan nulish coalescing operator
+        let a;
+
+        // Rumusnya => var
+        let b =a?? "nilainya jadi ada";
+        document.getElementById("nullish").innerHTML= b;
+    </script>
+</body>
+</html>

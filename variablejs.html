@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--  variable adalah sebuah nama yang mewakili sebuah niali.
+    variable bisa di isi dengan berbagai macam nilai seperti string (teks), number(angka), objek, array, dll -->
+    <h1>variable lokal dan publik Javascrip</h1>
+
+    <h2>A.Variable Lokal</h2>
+    <!-- variable lokal; temapatnya harus ada di dalam kurung -->
+    <p id ="lokal"></p>
+
+    <h2>B.Variable Publik</h2>
+    <!-- variable publik, bisa di taruh dimana mana -->
+    <p id="publik"></p>
+
+    <script>
+        variableLokal();
+        variablePublik();
+
+        function variableLokal(){
+            // harus ditulis di dalam kurung function.
+            var kata ="ini adalah variable lokal";
+
+            console.log(kata);
+            //    ini kepanggilnya di console
+            document.getElementById("lokal").innerHTML = kata;
+            // ini kelauarnya di html(di webnya)
+        }
+        //  variable lokal ()
+        function variablePublik(){
+         kalimat ="ini adalah variable publik";
+        //  bisa ga pake var, bisa digunakan di kurung function ataupun di dalamnya
+           console.log(kalimat);
+        
+           document.getElementById("publik").innerHTML = kalimat;
+                }
+    </script>
+
+    
+</body>
+</html>

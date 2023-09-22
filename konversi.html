@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>konversi</title>
+</head>
+<body>
+    
+    <h1>Konversi String dan Number</h1>
+    <h1 id="konversi"></h1>
+
+    <script>
+        let a = "10";
+        let b = 14;
+        let c = parseInt(a) + b;
+        // perseint => fungsinya mengubah string(teks) jadi number
+        document.getElementById("konversi").innerHTML = c;
+
+        
+        // parseFolat => buat konversi ke niali float atau desimal
+
+        // cara pertama
+        // let d = "19.83";
+        // let e = 14;
+        // let f = parseFloat(d) + e;
+        // document.getElementById("konversi").innerHTML = f;
+
+        // // number ("string") -> konversi cara kedua untuk ubah dari string ke number
+        // // bisa buat in ataupun float
+        // let d = Number("19.83");
+        // let e = 14.9;
+        // let f = d + e;
+        // document.getElementById("konversi").innerHTML = f;
+
+        number.toString()
+        let d = 10;
+        let e = 30;
+        let f = d.toString() + e;
+        document.getElementById("konversi").innerHTML = f;
+
+    </script>
+</body>
+</html>

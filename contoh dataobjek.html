@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1px " >
+       <tr>
+        <th>nama</th>
+        <th>asal</th>
+        <th>TTL</th>
+        <th>umur</th>
+       </tr>
+       <tr>
+        <td id="nama"></td>
+        <td id="asal"></td>
+        <td id="TTL"></td>
+        <td id="umur"></td>
+       </tr>
+    </table>
+    <script>
+        var bio ={
+            nama :"Zahra",
+            asal :"cirebon",
+            TTL  :"Bandung,16 juli 2003",
+            umur :"20",
+            
+        }
+        document.getElementById("nama").innerHTML=bio.nama;
+        document.getElementById("asal").innerHTML=bio.asal;
+        document.getElementById("TTL").innerHTML=bio.TTL;
+        document.getElementById("umur").innerHTML=bio.umur;
+
+        console.table(bio);
+        
+    </script>
+</body>
+</html>

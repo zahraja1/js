@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>data objek</title>
+</head>
+<style>
+    th{
+        background-color: burlywood;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+</style>
+<body>
+    <h1>jenis susu</h1>
+    <table border="1">
+        <tr>
+            <th>merk</th>
+            <th>varian</th>
+            <th>ukuran</th>
+            <th>harga</th>
+            <th>deskripsi</th>
+        </tr>
+        <tr>
+            <td><span id="merk"></span></td>
+            <td><span id="varian"></span></td>
+            <td><span id="ukuran"></span></td>
+            <td><span id="harga"></span></td>
+            <td><span id="deskripsi"></span></td>
+        </tr>
+
+    </table>
+    <script>
+        var susu = {
+            merk : "ultarmilk",
+            varian :"coklat",
+            ukuran : "200ml",
+            harga : "3000",
+            deskripsi :function(){ 
+                return this.merk +"yang enak rasa"+  this.varian+"harga"+this.harga;
+
+            
+            },
+        }
+
+            document.getElementById("merk").innerHTML = susu.merk;
+            document.getElementById("varian").innerHTML = susu.varian;
+            document.getElementById("ukuran").innerHTML = susu.ukuran;
+            document.getElementById("harga").innerHTML = susu.harga;
+            document.getElementById("deskripsi").innerHTML = susu.deskripsi();
+
+           
+
+       
+    </script>
+</body>
+</html>

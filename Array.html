@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <h1>Tipe Data Array</h1>
+    <!-- kumpulan data (number, )  -->
+    <h1 id="sitak"></h1>
+    <h1 id="sitak2"></h1>
+    <h1 id="sitak3"></h1>
+    <h1 id="sitak4"></h1>
+    <h1 id="sitak5"></h1>
+    <h1 id="sitak6"></h1>
+    <!-- array bisa diisi sama tipe data apapun
+    sifatnya dinamis => datanya nambah kalo kita input manual -->
+
+
+    <script>
+        let a =["Jeno", 20, 20.9, true, null];
+        let b =["Jenni", 21, 20.9, true, null];
+
+        document.getElementById("sitak").innerHTML = a;
+
+        document.getElementById("sitak2").innerHTML = b[3];
+        // menemukan index di array=> variable [index]
+
+        document.getElementById("sitak3").innerHTML = a.length;
+        // buat ngitung ada berapa index=> variable.length
+
+        document.getElementById("sitak4").innerHTML= a.push(80,"eaaa", false);
+        document.getElementById("sitak4").innerHTML= a;
+        // mau nambah data ke array => variable.push(datanya)
+
+        document.getElementById("sitak5").innerHTML= a[0] = "Taehyung";
+        document.getElementById("sitak5").innerHTML= a;
+        // Mengubah data di posisi index => variable [panggil index]= nilainya
+
+        document.getElementById("sitak6").innerHTML= delete a[0];
+        document.getElementById("sitak6").innerHTML= a;
+        // ngapus data di posisi index => delete variable[panggil indexnya]
+       
+    </script>
+</body>
+</html>
